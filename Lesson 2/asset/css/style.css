@@ -6,6 +6,9 @@
 a {
   text-decoration: none;
 }
+html,body{
+  scroll-behavior: smooth;
+}
 .agency-card-header {
   padding: 25px 4rem;
   position: fixed;
