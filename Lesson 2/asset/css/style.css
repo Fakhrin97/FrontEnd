@@ -1,0 +1,261 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.agency-card-header {
+  padding: 25px 4rem;
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+}
+.header-logo {
+  width: 15%;
+  float: left;
+}
+.navigation-bar {
+  float: right;
+  margin-top: 7px;
+}
+.navigation-bar a {
+  margin-left: 15px;
+  color: #fff;
+  font-size: 15.2px;
+  padding: 8px;
+}
+.navigation-bar a:hover {
+  color: #ffc800;
+}
+.tell-card {
+  text-align: center;
+  padding: 15rem 4rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+}
+.tell-card h1 {
+  font-size: 2.25rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.tell-card h3 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+.tell-card a {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ffc800;
+  border-color: #ffc800;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.services-card,
+.portfolio-card,
+.team-card {
+  padding: 6rem 4rem;
+  overflow: auto;
+}
+.services-text,
+.portfolio-text,
+.team-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.services-text h3,
+.portfolio-text h3,
+.team-text h3,
+.concat-text h3 {
+  color: #6c757d !important;
+}
+.services-text h2,
+.portfolio-text h2,
+.team-text h2,
+.concat-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.services-box .box p,
+.image-content p,
+.team-text .image-content p,
+.team-card .team-footer {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 19px;
+}
+.services-box .box h4,
+.image-content h4,
+.team-text .image-content h4 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+.services-box .box {
+  width: calc(100% / 3);
+  float: left;
+  padding: 20px;
+  text-align: center;
+}
+.services-box .box svg {
+  color: #fff;
+  background-color: #ffc800;
+  height: 7.5rem;
+  border-radius: 100%;
+  padding: 20px;
+}
+.portfolio-card {
+  background-color: #f8f9fa;
+}
+.portfolio-card .portfolio-box {
+  width: 30%;
+  float: left;
+  margin: 20px 10px;
+}
+.portfolio-card .portfolio-box img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.portfolio-box .image-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 0;
+}
+.team-card .team-box {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 50px;
+  margin-left: 80px;
+}
+
+.team-card .team-box .team-image img {
+  width: 100%;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.team-box .team-icon {
+  width: 100%;
+}
+.team-footer {
+  text-align: center;
+  width: 75%;
+  padding: 100px 100px 0;
+  margin-left: 150px;
+}
+.networking-card img {
+  width: 100%;
+}
+.contact-card {
+  overflow: auto;
+  width: 100%;
+  padding: 4rem 4rem;
+  background-color: #212529;
+  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.concat-text {
+  margin-bottom: 5rem;
+}
+.concat-text h2 {
+  color: #fff;
+}
+.contact-input {
+  width: 49%;
+  float: left;
+}
+.contact-input input {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.contact-area {
+  width: 49%;
+  float: right;
+}
+.contact-area textarea {
+  height: 100%;
+  padding: 1.25rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  resize: vertical;
+}
+
+.contact-form{
+    height: 300px;
+}
+.contact-button button {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ffc800;
+  border-color: #ffc800;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.contact-button {
+  width: 100%;
+}
+.agency-card-footer {
+  padding: 0 4rem;
+}
+.agency-card-footer .copyrigh-site {
+  width: 20%;
+  float: left;
+  margin-top: 30px;
+  
+}
+.agency-card-footer .footer-logo{
+    width: 60% ;
+    float: left;
+   
+}
+.agency-card-footer .footer-logo img {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 300px;
+  height: 65px;
+ 
+}
+.agency-card-footer .footer-href {
+  width: 20%;
+  text-align: center;
+  float: right;
+  margin-top: 30px;
+  
+}
+.agency-card-footer .footer-href a {
+  color: #212529;
+  margin-left: 10px;
+  margin-top: 30px;  
+ 
+}
