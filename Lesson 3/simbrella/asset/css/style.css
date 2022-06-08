@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 0 14rem;
+}
+.header-card {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  position: fixed;
+}
+.navbar a {
+  color: white;
+  font-size: 17px;
+  margin-left: 40px;
+}
+.content {
+  padding: 10rem 0 21.5rem;
+  width: 55%;
+}
+.content h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+.content p {
+  font-size: 15px;
+  color: #fff;
+}
+#frist {
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://www.simbrella.com/site/assets/files/1040/cover.jpg);
+}
+#second {
+  padding: 3rem 0 15rem;
+}
+.read-content {
+  display: flex;
+  justify-content: space-between;
+}
+.read-content h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #2d3192;
+}
+.read-content a {
+  height: 56px;
+  padding: 0 100px 0 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 56px;
+  box-shadow: inset 0 0 0 3px #dfe4eb;
+  border-radius: 12px;
+  color: #222;
+}
+.read-content a:hover {
+  box-shadow: inset 0 0 0 3px #ff931e;
+}
+.read-all-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13rem;
+}
+.read-all-box a {
+  width: calc(33.333% - 20px);
+  padding: 200px 100px;
+  box-shadow: inset 0 0 0 1px #d5dde4;
+  border-radius: 4px;
+  color: #222;
+  font-size: 15px;
+  line-height: 56px;
+}
+#thrid {
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg);
+}
+.tech-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem 0 8rem;
+}
+.tech-left {
+  width: 40%;
+}
+.tech-left h2 {
+  font-size: 54px;
+  color: #fff;
+  line-height: 1.29;
+  letter-spacing: 0.01em;
+  padding: 0 20px;
+}
+.tech-right {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.12;
+  color: #fff;
+  line-height: 90px;
+  width: 40%;
+  background-color: #2d30925b;
+ }
+ li{
+     list-style: none;
+ }
+
+ #fourt{
+     padding: 3rem 0 25rem;
+ }
+ .sales-text h2{
+    padding: 0 0 30px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.29;
+    letter-spacing: 0.01em;
+    color: #2D3192;
+    margin-bottom: 5rem;
+ }
+ .sales-box h3{
+    font-size: 48px;
+    padding: 0 0 8px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: #FF931E;
+ }
+ .sales-box p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-transform: uppercase;
+    color: #222;
+ }
+ .all-count{
+     display: flex;
+     justify-content: space-between;
+ }
+ #fifth{
+     padding: 0 10rem;
+ }
