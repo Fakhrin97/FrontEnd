@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body{
+    background-color: bisque;
+}
+
+.contain {
+  padding: 5rem 20rem;
+}
+
+.all-blog {
+  width: 100%;
+  display: flex;
+}
+
+.blog {
+  width: 30%;
+  border-radius: 10px;
+  background-color: rgb(254, 254, 254);
+  overflow: hidden;
+  margin: 0 1rem;
+  z-index: 1;
+}
+.blog .frist-img {
+  margin-bottom: 1rem;
+}
+.blog .frist-img img {
+  width: 100%;
+}
+
+.tech {
+  background-color: aqua;
+  border-radius: 15px;
+  display: inline;
+  color: #fff;
+  margin-left: 1rem;
+  padding: 5px;  
+}
+.frist-content h2{
+    margin: 10px 1rem;
+    font-size: 20px;
+}
+.frist-content h6{
+    margin-left: 1rem;
+    color: gray;
+}
+.frist-user{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+.frist-user img{
+    border-radius: 100%;
+    overflow: hidden;
+}
+.frist-user h1{
+    font-size: 20px;
+}
+
+
