@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.home{
+  position: relative;
+}
+.home .content{
+  padding-top: 20px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;  
+}
+.home .content a{
+  padding-top: 10px;
+}
+.home:hover .content{
+  
+  opacity: 1;
+  visibility: visible;  
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-all {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+}
+.header-all .header-logo {
+  width: 10%;
+}
+.header-all .header-logo img {
+  width: 100%;
+}
+.nav-logo i {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.header-nav li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 23px;
+  margin-left: 30px;
+}
+.header-nav {
+  margin-left: 35rem;
+}
+.header-nav li a {
+  position: relative;
+}
+.header-nav li a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.5s;
+}
+.header-nav li a:hover::after {
+  width: 100%;
+}
+#ba {
+  position: relative;
+}
+
+#ba::after {
+  content: "0";
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  font-size: 15px;
+  font-weight: 100;
+}
+#shop {
+  padding: 8rem 0 8rem;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+}
+.shop-all {
+  width: 60%;
+  text-align: center;
+  margin-left: 30rem;
+}
+
+.shop-content {
+  z-index: 5;
+  white-space: nowrap;
+  font-size: 88px;
+  line-height: 78px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 30px 0px;
+  opacity: 1;
+}
+.shop-text {
+  z-index: 8;
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  text-align: center;
+  border-width: 0px;
+  margin: 30px 0px 60px;
+  opacity: 1;
+}
+.shop-all a {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 23px 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  line-height: 1.15em;
+  letter-spacing: 0.15em;
+}
+.offer-card,
+.herald-card {
+  padding: 7rem 0;
+}
+.offer-content,
+.herald-content,
+.online-content,
+.gallery-content {
+  text-align: center;
+}
+.offer-content h2,
+.herald-content h2,
+.online-content h2,
+.gallery-content h2 {
+  color: #262626;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.offer-content h2::selection,
+.herald-content h2::selection,
+.online-content h2::selection,
+.gallery-content h2::selection{
+  background: #be9c79;
+  color: #fff;
+}
+.offer-content h6,
+.herald-content h6,
+.online-content h6,
+.gallery-content h6 {
+  font-size: 24px;
+  line-height: 1.55em;
+  font-style: normal;
+  font-weight: 300;
+  color: #ababab;
+}
+.offer-content h6::selection,
+.herald-content h6::selection,
+.gallery-content h6::selection {
+  background: #be9c79;
+  color: #fff;
+}
+.offer-content img,
+.herald-content img,
+.online-content img,
+.gallery-content img {
+  margin: 20px 0;
+}
+.box {
+  width: 20%;
+  text-align: center;
+}
+.offer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+  margin-top: 5rem;
+}
+.offer-item a {
+  font-size: 24px;
+  color: #262626;
+}
+.offer-item .box-title {
+  margin: 15px 0;
+}
+.offer-item a:hover {
+  color: #be9c79;
+}
+.offer-item p {
+  font-size: 17px;
+  color: #656565;
+  line-height: 23px;
+}
+#herald {
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+}
+.herald-card {
+  padding: 8rem 8rem;
+}
+.herald-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+.herald-item .box {
+  width: 32%;
+}
+.herald-item img {
+  width: 100%;
+}
+.herald-item .box-title,
+.herald-item .box-post,
+.herald-item .read-more {
+  text-align: left;
+}
+.herald-item .box-title {
+  margin: 20px 0;
+}
+.herald-item .box-title a {
+  font-size: 26px;
+  color: #161515;
+  font-weight: 500;
+}
+
+.herald-item .box-title a::selection {
+  background: #be9c79;
+  color: #fff;
+}
+.herald-item .box-title a:hover {
+  color: #be9c79;
+}
+.herald-item .box-post p {
+  font-size: 17px;
+  color: #656565;
+  font-weight: 100;
+}
+.herald-item .read-more{
+    margin-top: 20px;
+    transition: .5s;
+}
+.herald-item .read-more a {
+  font-size: 12px;
+  color: #161515;
+  font-weight: bolder;
+  position: relative;
+  margin-left: 20px;
+}
+.herald-item .read-more:hover {
+ transform: translateX(10px);
+}
+.herald-item .read-more a::before {
+  content: "-";
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  font-size: 25px;
+}
+.brend-card{
+    
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+}
+.brend-card img{
+    padding: 10rem 0;
+}
+#brend{
+    padding: 10rem 0 0;
+}
+.indicator-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#indicator{
+    padding: 10rem 7rem;
+}
+.indicator-item .box{
+    width: 23%;
+}
+.indicator-item .box span{
+    font-size: 70px;
+    color: #be9c79;
+    letter-spacing: .05em;
+    line-height: .9em;
+}
+.indicator-item .box h5{
+    margin: 31px 0 0;
+    color: #262626;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.indicator-item .box p{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+    margin: 8px 0 0;
+}
+#online{
+    padding: 10rem 5rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+}
+.online-item{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.online-item .box{
+ width: 22%;
+
+ 
+}
+
+.online-item .box-img img{
+    width: 100%;
+    
+}
+.online-item .box-title h5{
+    margin: 0 0 4px;
+    font-weight: 400;    
+    font-size: 20px;
+    margin: 1rem 0;
+}
+.online-item .box-title a{
+   color: #161515;
+}
+.online-item .box-price span{
+    color: #777;
+    font-weight: 300;
+    font-size: 22px;
+}
+.gallery-content{
+    padding: 8rem 0;
+}
+.gallery-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery-item .box{
+    width: 24%;
+    position: relative;
+}
+.gallery-item .box img{
+    width: 100%;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+.gallery-item .overlay{
+    width: 100%;
+    height: 95%;
+    background-color: #161515;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+    
+}
+
+.gallery-item .box:hover .overlay{
+    opacity: 0.7;
+}
+.gallery-item .overlay h4{
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.33em;
+    letter-spacing: 1.5px;
+    z-index: 99;
+}
+.gallery-item a{
+    color: #fff;
+    padding: 0 6px 0 0;
+    margin: 0 3px 0 0;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+}
+.gallery-item .cup{
+   position: relative;
+}
+.gallery-item .cup::after{
+    content: '/';
+    position: absolute;
+    right: -4px;
+    margin: 0 3px 0;
+
+}
+.header-all-mob{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2rem;
+}
+.header-logo-mob{
+    width: 35%;
+    margin-left: 6rem;
+}
+.header-logo-mob img{
+    width: 100%;
+}
+#header{
+    display: none;
+}
+.scrool-basket{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 250px;
+    right: 0;
+    z-index: 99;
+}
+
+@media(max-width:576px){
+    #header{
+        display: block;
+    }
+
+    header{
+        display: none;
+    }
+    .shop-all{
+        margin-left: 0;
+    }
+    .shop-all .shop-content{
+        font-size: 40px;
+       
+    }
+    .offer-item {
+        flex-direction: column;
+    }
+    .offer-item .box{
+        width: 100%;
+        
+    }
+    .herald-item{
+        flex-direction: column;
+        
+    }
+    .herald-item .box{
+        width: 100%;
+    }
+    .herald-card {
+      padding: 1.5rem;
+    }
+    .herald-content{
+      padding: 1rem;
+    }
+    .herald-content h2{
+      font-size: 40px ;
+    }
+    .herald-content h6{
+      font-size: 24px ;
+    }
+    .herald-item .box-img{
+      margin-bottom: 10px;
+    }
+    .herald-item .read-more{
+      margin-bottom: 30px;
+    }
+}
+
+
