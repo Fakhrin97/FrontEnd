@@ -1,0 +1,106 @@
+nav,
+.started-card img {
+  width: 100%;
+}
+
+.started-card img {
+  border-radius: 5px;
+}
+.secondary:hover {
+  background-color: aliceblue;
+  color: black;
+}
+.building-card i {
+  background-color: #287efd;
+  color: #fff;
+  font-size: 32px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.pomodoro-card {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+}
+.pomodoro-content p {
+  font-size: 30px;
+}
+.pomodoro-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pomodoro-footer img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.blog-card h5 {
+  position: relative;
+}
+.blog-card h5::after {
+  content: "News";
+  position: absolute;
+  left: 0;
+  top: -31px;
+  font-size: 14px;
+  background-color: #106ffd;
+  border-radius: 14px;
+  color: white;
+  padding: 6px;
+}
+.blog-card .footer img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.blog-card .footer{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+#sign-up{
+  padding: 5rem 0;
+}
+.deliver{
+  background-color: #1975FD;
+  padding: 2.6rem 1rem;
+  border-radius: 5px;
+}
+.deliver h1{
+  font-size: 30px;
+  color: #fff;
+ 
+}
+.deliver p{
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 16px;  
+}
+.deliver input{
+  width: 69%;
+  height: 42px;
+  outline: none;
+}
+.deliver button{
+  padding: 6px 12px;
+  background-color: #1975FD;
+  border: #fff 1px solid;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 0 5px 5px 0;
+  
+}
+.address{
+  text-align: right;
+}
+
+
+@media (max-width: 578px) {
+    .started-card {
+        text-align: center;
+    }
+    .pomodoro-card{
+        width: 90%;
+    }
+}
