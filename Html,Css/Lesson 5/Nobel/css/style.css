@@ -353,7 +353,7 @@ a {
   left: 4rem;
 }
 .discount-text a {
-  position: absolute;   
+  position: absolute;
   bottom: 5rem;
   left: 4rem;
   display: inline-block;
@@ -365,37 +365,39 @@ a {
   text-decoration: none;
   font-weight: 400;
   line-height: 1.5;
+  display: flex;
+  align-items: center;
 }
-.discount-text svg{
+.discount-text svg {
   margin-left: 1rem;
 }
-.info-item{
+.info-item {
   padding: 5rem 0;
   display: flex;
 }
-.info{
+.info {
   width: 16%;
 }
-.info ul{
+.info ul {
   list-style: none;
 }
-.info h6{
+.info h6 {
   font-size: 15px;
   margin-bottom: 16px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #171717;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #171717;
 }
-.info li{
+.info li {
   margin: 1rem 0;
 }
-.info li a{
+.info li a {
   color: rgba(0, 0, 0, 0.55);
-  
+
   margin: 0;
   font-size: 13px;
   line-height: 18px;
 }
-.info li a:hover{
+.info li a:hover {
   color: #0c63b4;
 }
