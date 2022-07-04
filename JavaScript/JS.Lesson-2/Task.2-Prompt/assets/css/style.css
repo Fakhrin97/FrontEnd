@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-size: 30px;
+  padding: 5px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #7373ff;
+  border: 2px solid#7373ff;
+  cursor: pointer;
+  color: rgb(100 91 91);
+  border-radius: 10px;
+}
