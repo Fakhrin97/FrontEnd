@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="credit">
+        <p>Kreditin Meblegi</p>
+        <input id="amount" type="text" placeholder="Enter Amount">
+        <p>Bolunecek Ay</p>
+        <select name="" id="month">
+            <option value="3">3 Ay</option>
+            <option value="6">6 Ay</option>
+            <option value="9">9 Ay</option>
+            <option value="12">12 Ay</option>
+            <option value="18">18 Ay</option>
+            <option value="24">24 Ay</option>
+        </select>
+        <p>Illik Faiz Derecesi</p>
+        <input id="percent" type="text" placeholder="Percent">
+        <button id="click" onclick="Click()">Hesabla</button>
+        <div class="content">
+            <p>Umumi Mebleg:<span id="comonpay">0Anz</span></p>
+            <p>Ayliq Odenilmeli Mebleg:<span id="monthpay">0Anz</span></p>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

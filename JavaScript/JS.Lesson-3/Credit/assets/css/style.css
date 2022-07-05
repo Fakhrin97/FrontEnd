@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#credit{
+    padding: 4rem 2rem;
+    width:30%;
+    background-color: aqua;
+    margin: 5rem auto;
+    border: 1px solid aqua;
+    border-radius: 20px;
+}
+#amount{
+    width: 100%;
+}
+#month{
+    width: 100%;
+}
+#percent{
+    width: 100%;
+}
+#click{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+p{
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.content{
+    text-align: center;
+}
+input{
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+}
+select{
+    font-size: 15px;
+    padding: 5px;
+}
+button{
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
