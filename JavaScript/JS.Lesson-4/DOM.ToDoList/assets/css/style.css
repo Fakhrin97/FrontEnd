@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ul{
+    margin-left: 200px;
+}
+.li-1{
+    margin: 10px;
+    font-size: 25px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+}
+#do{
+  width: 30%;
+  margin: 3rem auto;
+}
+#text{
+    width: 300px;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+}
+#btn{
+    font-size: 20px;
+}
+#btn_done{
+    background-color: aqua;
+}
