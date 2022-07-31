@@ -1,4 +1,3 @@
-
 //Slider ucun
 $(document).ready(function(){
     $('.slider').slick({
@@ -48,27 +47,27 @@ $(document).ready(function(){
     
 
 //Headerin top hissesindeki dropdownlari idare etmek ucun
-var sellDropDown=document.querySelector("#sell-with-us");
-sellDropDown.addEventListener('click',function(){
-    if(document.querySelector('.us-content').classList.contains('active-block')){
-        document.querySelector('.us-content').classList.remove('active-block')
-    }
-    document.querySelector('.sell-content').classList.toggle('active-block')
-})
+let getMoneystate = document.getElementById("money");
+let getSellwithus = document.getElementById("sell-with-us");
 
-var usDropDown=document.querySelector("#header-top-us");
-usDropDown.addEventListener('click',function(){
-    if(document.querySelector('.sell-content').classList.contains('active-block')){
-        document.querySelector('.sell-content').classList.remove('active-block')
-    }
-    document.querySelector('.us-content').classList.toggle('active-block')
-})
+getMoneystate.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".sell-with-us").classList.remove("d-block");
+  document.querySelector(".money-change").classList.toggle("d-block");
+});
+getSellwithus.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".money-change").classList.remove("d-block");
+  document.querySelector(".sell-with-us").classList.toggle("d-block");
+});
+$(document).ready(function () {
+  $(".button-all-categories").click(function (e) {
+    e.preventDefault();
+    $(".all-catogories-catalog").slideToggle();
+  });
 
-var category=document.querySelector('.select-category')
-category.addEventListener('click',function(){
-    console.log('hello');
-    document.querySelector("#all-category").classList.toggle('active-block')
-})
+});
+
 //Details Seyfesindeki Slider
 $('.slider-single').slick({
   slidesToShow: 1,
