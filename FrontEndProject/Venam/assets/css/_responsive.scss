@@ -43,6 +43,18 @@
       }
     }
   }
+  footer{
+   .footer-img-text{
+     h2{
+
+       font-size: 40px !important;
+     }
+   }
+   .left{
+    
+   }
+    
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -158,6 +170,7 @@
       }
     }
   }
+  
 }
 @media (min-width: 992px) and (max-width: 1024px) {
   header {
@@ -253,6 +266,7 @@
       }
     }
   }
+ 
 }
 @media (min-width: 1024px) and (max-width: 1140px) {
   header {
@@ -305,6 +319,7 @@
       }
     }
   }
+ 
 }
 
 @media (min-width: 1140px) and (max-width:1400px) {
@@ -358,6 +373,7 @@
       }
     }
   }
+ 
 }
 @media(min-width:1400px){
   header {
@@ -368,4 +384,5 @@
       display: none;
     }
   }
+ 
 }

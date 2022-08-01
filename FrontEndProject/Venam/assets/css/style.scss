@@ -9,6 +9,10 @@
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+html,body{
+  scroll-behavior: smooth;
+}
+
 fieldset, label { margin: 0; padding: 0; }
 body{  }
 h1 { font-size: 1.5em; margin: 10px; }
@@ -75,6 +79,15 @@ li {
 }
 .active-block{
     display: block !important;
+}
+.active-header{  
+  top: 0;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+.active{
+  display: none;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -43,6 +43,76 @@ $(document).ready(function(){
         ]
         
       });
+      $('.newest-slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+      $('.popular-slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
   });
     
 
@@ -175,7 +245,7 @@ for(var btn of btns){
   })
 }
 
-//Basket 
+//Basket/Local Storage 
 let addToCartBtns = document.querySelectorAll("#add-to-basket");
 let basketCount = document.querySelector("#shopping-count")
 
@@ -230,4 +300,18 @@ addToCartBtns.forEach(cartBtn => {
         addToBasket(ev.target)
     })
 })
+////For move down page
+window.onscroll=function(){
+if(document.body.scrollTop>400 || document.documentElement.scrollTop>400){
+  
+  document.querySelector(".arrow-for-down").classList.remove('active')
+  document.querySelector(".buttom").classList.add('active-header')
+
+  console.log('hello');
+}
+else{
+  document.querySelector(".arrow-for-down").classList.add('active');
+  document.querySelector(".buttom").classList.remove('active-header')
+}
+}
 
