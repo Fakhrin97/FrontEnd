@@ -594,7 +594,7 @@ header {
             }
             &:last-child {
               padding-top: 20px;
-              color: #f7ba01;
+              color: #FF6000;
               font-size: 14px;
               font-family: bold;
             }
@@ -612,7 +612,7 @@ header {
         &::before {
           content: "";
           height: 6px;
-          background-color: #f7ba01;
+          background-color: #FF6000;
           width: 0;
           bottom: -24px;
           left: 0;
@@ -676,7 +676,13 @@ header {
       }
     }
   }
+  .header-phone,.header-tablet{
+    i{cursor: pointer;
+    }
+  }
 }
+
+
 //Footer
 footer {
   background-color: #f2f2f2;
@@ -780,7 +786,7 @@ footer {
       overflow: hidden;
 
       height: 60px;
-      width: 650px;
+      width: 100%;
       input {
         height: 100%;
         width: 75%;

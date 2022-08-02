@@ -127,3 +127,44 @@
   }
 
 }
+.siderbar{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 0;
+  background-color: #202020;
+  .head{
+    padding: 2rem 0;
+    i{
+      color: #fff;
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+  .path{
+    a{
+      border-radius: 5px;
+      color: #fff;
+      background-color: #252525;
+      padding: 5px 15px;
+      &:hover{
+        background-color: #373737;
+      }
+    }
+  }
+  .catigorie{
+    padding: 10px 0;
+    i{
+      color: #fff;
+      background-color: #373737;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 8px;
+    }
+    a{
+      color: #fff;
+    }
+  }
+}
+

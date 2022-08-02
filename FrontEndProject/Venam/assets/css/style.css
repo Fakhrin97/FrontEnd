@@ -560,7 +560,7 @@ header .buttom .special-categories-1 .specila-categories-2 ul li:first-child {
 }
 header .buttom .special-categories-1 .specila-categories-2 ul li:last-child {
   padding-top: 20px;
-  color: #f7ba01;
+  color: #FF6000;
   font-size: 14px;
   font-family: bold;
 }
@@ -573,7 +573,7 @@ header .buttom .store-list-categories-1 .store-list-categories-3 {
 header .buttom .store-list-categories-1 .store-list-categories-3::before {
   content: "";
   height: 6px;
-  background-color: #f7ba01;
+  background-color: #FF6000;
   width: 0;
   bottom: -24px;
   left: 0;
@@ -626,6 +626,9 @@ header .buttom .contact-categories-1::before {
 }
 header .buttom .contact-categories-1:hover::before {
   width: 100%;
+}
+header .header-phone i, header .header-tablet i {
+  cursor: pointer;
 }
 
 footer {
@@ -724,7 +727,7 @@ footer #footer-subscribe .subscribe-form {
   border-radius: 5px;
   overflow: hidden;
   height: 60px;
-  width: 650px;
+  width: 100%;
 }
 footer #footer-subscribe .subscribe-form input {
   height: 100%;
@@ -1531,6 +1534,9 @@ footer #footer-bottom img {
 }
 
 @media (max-width: 576px) {
+  .siderbar {
+    display: none;
+  }
   header .top .all {
     display: flex;
     align-items: center !important;
@@ -1573,6 +1579,10 @@ footer #footer-bottom img {
   footer .footer-img-text h2 {
     font-size: 40px !important;
   }
+  #prodact-details, #send-message, #form, #slidesr, #prodacts, #most-popular,
+#rotating-icons, #newest-products, #all-prodacts, #latest-update {
+    overflow-x: hidden;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   header .top .all {
@@ -1614,6 +1624,13 @@ footer #footer-bottom img {
   }
   header .header-tablet img {
     margin-left: 15px;
+  }
+  .siderbar {
+    display: none;
+  }
+  #prodact-details, #send-message, #form, #slidesr, #prodacts, #most-popular,
+#rotating-icons, #newest-products, #all-prodacts, #latest-update {
+    overflow-x: hidden;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1672,6 +1689,13 @@ footer #footer-bottom img {
   }
   header .header-tablet img {
     margin-left: 15px;
+  }
+  .siderbar {
+    display: none;
+  }
+  #prodact-details, #send-message, #form, #slidesr, #prodacts, #most-popular,
+#rotating-icons, #newest-products, #all-prodacts, #latest-update {
+    overflow-x: hidden;
   }
 }
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -1758,6 +1782,13 @@ footer #footer-bottom img {
     display: flex;
     justify-content: start;
   }
+  .siderbar {
+    display: none;
+  }
+  #prodact-details, #send-message, #form, #slidesr, #prodacts, #most-popular,
+#rotating-icons, #newest-products, #all-prodacts, #latest-update {
+    overflow-x: hidden;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1140px) {
   header .header-phone {
@@ -1803,6 +1834,9 @@ footer #footer-bottom img {
   }
   header .buttom .container .right-categories a {
     margin: 0 0 0 15px;
+  }
+  .siderbar {
+    display: none;
   }
 }
 @media (min-width: 1140px) and (max-width: 1400px) {
@@ -1850,12 +1884,18 @@ footer #footer-bottom img {
   header .buttom .container .right-categories a {
     margin: 0 0 0 15px;
   }
+  .siderbar {
+    display: none;
+  }
 }
 @media (min-width: 1400px) {
   header .header-phone {
     display: none;
   }
   header .header-tablet {
+    display: none;
+  }
+  .siderbar {
     display: none;
   }
 }
@@ -2894,6 +2934,45 @@ footer #footer-bottom img {
   margin-bottom: 40px;
 }
 
+.siderbar {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 0;
+  background-color: #202020;
+}
+.siderbar .head {
+  padding: 2rem 0;
+}
+.siderbar .head i {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.siderbar .path a {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #252525;
+  padding: 5px 15px;
+}
+.siderbar .path a:hover {
+  background-color: #373737;
+}
+.siderbar .catigorie {
+  padding: 10px 0;
+}
+.siderbar .catigorie i {
+  color: #fff;
+  background-color: #373737;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 8px;
+}
+.siderbar .catigorie a {
+  color: #fff;
+}
+
 #info-boxes {
   overflow-x: hidden;
   padding: 8rem 0;
@@ -3214,6 +3293,12 @@ li {
 
 .active-tab {
   color: #ff6000 !important;
+}
+
+.active-slidebar {
+  display: block !important;
+  width: 100% !important;
+  height: 100vh !important;
 }
 
 .active-block {

@@ -35,13 +35,30 @@ function removeProduct(el, productId) {
   updateTotalCount();
 }
 
-function minsusPrdoactCount(el, productId) {
-  console.log("hello");
+function updateProductQuantity(el, productPrice, quantity, productId) {
+  let productInp = el.parentElement.querySelector(".product-quantity");
+  let productQuantity = +productInp.value;
+  let parent = el.closest("tr");
+  let totalPrice = parent.querySelector(".total-price");
+  
+  let newQuantity = quantity == -1 ? productQuantity - 1 : productQuantity + 1;
+
+  if (newQuantity >0) {  
+    productInp.value = newQuantity; 
+  }else{
+    newQuantity=1;
+  }
+
+
+  totalPrice.innerText = `${productPrice * newQuantity} AZN`;
+
+  let product = products.find((p) => p.id == productId);
+  product.count = newQuantity;
+  localStorage.setItem("products", JSON.stringify(products));
+  updateTotalCount();
 }
 
 products.forEach((product) => {
-  let price = +product.price.split("AZN")[0];
-
   productList.innerHTML += `
           <tr>
               <td>
@@ -58,13 +75,19 @@ products.forEach((product) => {
               <td>
               <div class="qualty-chance d-flex align-items-center">
                   <div class="quality-minus"
-                  click="minsusPrdoactCount(event.target, ${product.id})"
+                  onclick="updateProductQuantity(event.target, ${product.price}, -1, ${product.id})"
                   >-</div>
-                  <input type="number"
-                  min="1" 
-                  value="${product.count}"
-                //   onchange="updateProductCount(event.target, ${product.id})">
-                  <div class="quality-plus">+</div>                                                                           
+
+                  <input
+                    type="number"
+                    min="1"
+                    class="product-quantity"
+                    value="${product.count}"
+                  >
+
+                  <div class="quality-plus"
+                  onclick="updateProductQuantity(event.target, ${ product.price}, 1, ${product.id})"
+                  >+</div>                                                                           
               </div>
             </td>
               <td>
@@ -76,38 +99,3 @@ products.forEach((product) => {
           </tr>
       `;
 });
-// var minus = document.querySelector(".");
-
-// function updateProductCount(el, productId) {
-//     let currentCount = el.value;
-//     if(currentCount>1){
-//         currentCount--;
-//         console.log(currentCount);
-//     }
-
-//   productu silmek ucun istifade etdik
-// if (currentCount == 0) {
-//   el.parentElement.parentElement.querySelector(".remove-product").click();
-// }
-
-// if (currentCount < 0) {
-//   alert("Ismayilin qazabina ugradiniz!");
-//   el.value = 1;
-//   return;
-// }
-
-// let product = products.find((p) => p.id == productId);
-
-// let price = +product.price.split("AZN")[0];
-// price *= currentCount;
-
-// product.count = currentCount;
-
-// localStorage.setItem("products", JSON.stringify(products));
-
-// let totalPrice = el.parentElement.parentElement.querySelector(".total-price");
-
-// totalPrice.innerText = price;
-
-// updateTotalCount();
-//   }

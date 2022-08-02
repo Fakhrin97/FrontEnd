@@ -314,4 +314,16 @@ else{
   document.querySelector(".buttom").classList.remove('active-header')
 }
 }
+////Slide Bar
+var sliderbar=document.querySelector(".slidebb");
+
+sliderbar.addEventListener('click',function(){
+  console.log('hello');
+  document.querySelector('.siderbar').classList.add('active-slidebar')
+})
+var sliderbarclose=document.querySelector("#close-slidebar");
+
+sliderbarclose.addEventListener('click',function(){
+  document.querySelector('.siderbar').classList.remove('active-slidebar')
+})
 
